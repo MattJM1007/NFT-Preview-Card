@@ -1,0 +1,148 @@
+:root{
+    /* Primary Colors */
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: #00fff7;
+    /* Neutral Colors */
+    --Dark-blue-main: hsl(217, 54%, 11%);
+    --Dark-blue-card: hsl(216, 50%, 16%);
+    --Dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    /* Fonts */
+    font-size: 18px;
+    --Semi-bold: 600;
+    --Normal: 400;
+    --Light: 300;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--Dark-blue-main);
+    font-family: Outfit, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+main{
+    background-color: var(--Dark-blue-card);
+    max-width: 350px;
+    padding: 1.2rem;
+    border-radius: 0.8rem;
+}
+
+.productimg{
+    max-width: 100%;
+    border-radius: 0.4rem;
+    align-items: center;
+}
+
+.title{
+    color: var(--White);
+    font-size: 1.3rem;
+    font-weight: var(--Semi-bold);
+    margin-top: 1.2rem;
+}
+
+.description{
+    color: var(--Soft-blue);
+    font-size: 1rem;
+    font-weight: var(--Light);
+    margin: 0.8rem 0 1.2rem;
+}
+
+.value, .time, .icon, .text{
+    display: inline-block;
+}
+
+.price{
+    color: var(--Cyan);
+    font-size: 0.8rem;
+    font-weight: var(--Semi-bold);
+    vertical-align: middle;
+}
+
+.days{
+    color: var(--Soft-blue);
+    font-size: 0.8rem;
+    font-weight: var(--Light);
+    vertical-align: middle;
+}
+
+.time{
+    float: right;
+}
+
+.icon{
+    vertical-align: middle;
+    margin-right: 0.4rem;
+}
+
+.profilepic{
+    max-width: 33px;
+    display: inline-block;
+    margin-right: 0.8rem;
+    border: 1px var(--White) solid;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.name{
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 0.8rem;
+    color: var(--Soft-blue);
+    font-weight: var(--Light);
+}
+
+.name>span{
+    color: var(--White);
+    font-weight: normal;
+}
+
+.author{
+    border-top: 1px solid var(--Dark-blue-line);
+    margin-top: 1.2rem;
+    padding-top: 0.8rem;
+}
+
+.title:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+.name>span:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+.overlay{
+  position: absolute;
+  left: 42%;
+  right: 50%;
+  top: 19.5%;
+  bottom: 40%;
+  width: 17rem;
+  height: 17rem;
+  border-radius: 0.4rem;
+  background-color: rgb(0, 255, 247,50%);
+  opacity: 0;
+}
+
+.viewicon{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);  
+}
+
+.overlay:hover {
+    cursor: pointer;
+    opacity: 1;
+}
