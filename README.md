@@ -1,6 +1,6 @@
 # Frontend Mentor - NFT preview card component solution
 
-This is a solution to the [NFT preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [NFT preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -15,7 +15,6 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
   - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
-
 
 ## Overview
 
@@ -32,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/MattJM1007/NFT-Preview-Card)
+- Live Site URL: [Add live site URL here](https://mattjm1007.github.io/NFT-Preview-Card/)
 
 ## My process
 
@@ -44,18 +43,19 @@ Users should be able to:
 
 ### What I learned
 
-Learned more about to overlay an images on hover. 
+Learned more about to overlay an images on hover.
 
 ```html
 <section class="mainimg">
-      <img class="productimg" src="./images/image-equilibrium.jpg" alt="equilibrium cube">
-      <section class="overlay">
-        <img class="viewicon" src="./images/icon-view.svg" alt="view overlay icon">
+  <img class="productimg" src="./images/image-equilibrium.jpg" alt="equilibrium cube" />
+  <section class="overlay">
+    <img class="viewicon" src="./images/icon-view.svg" alt="view overlay icon" />
+  </section>
 </section>
 ```
 
 ```css
-.overlay{
+.overlay {
   position: absolute;
   left: 42%;
   right: 50%;
@@ -64,20 +64,20 @@ Learned more about to overlay an images on hover.
   width: 17rem;
   height: 17rem;
   border-radius: 0.4rem;
-  background-color: rgb(0, 255, 247,50%);
+  background-color: rgb(0, 255, 247, 50%);
   opacity: 0;
 }
 
-.viewicon{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);  
+.viewicon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .overlay:hover {
-    cursor: pointer;
-    opacity: 1;
+  cursor: pointer;
+  opacity: 1;
 }
 ```
 
@@ -89,8 +89,6 @@ I want to keep working on positioning elements and completing challenges faster.
 
 - [Overlaying Images](https://www.w3schools.com/howto/howto_css_image_overlay_icon.asp) - This helped with how to overlay images
 
-
 ## Author
 
 - Frontend Mentor - [@MattJM1007](https://www.frontendmentor.io/profile/MattJM1007)
-
