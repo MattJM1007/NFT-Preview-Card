@@ -14,49 +14,32 @@
     <link rel="stylesheet" href="./styles.css" />
 
     <title>Frontend Mentor | NFT preview card component</title>
-
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-        color: white;
-      }
-      .attribution a {
-        color: cyan;
-      }
-      .attribution {
-        margin-top: 1rem;
-      }
-    </style>
   </head>
   <body>
     <main>
-      <section class="mainimg">
-        <img class="productimg" src="./images/image-equilibrium.jpg" alt="equilibrium cube" />
-        <section class="overlay">
-          <img class="viewicon" src="./images/icon-view.svg" alt="view overlay icon" />
-        </section>
-      </section>
+      <div class="card">
+        <img class="card__img" src="./images/image-equilibrium.jpg" alt="clear, redish cube sitting on one corner against a dark blue background" />
 
-      <section class="info">
-        <h1 class="title">Equilibrium #3429</h1>
-        <p class="description">Our Equilibrium collection promotes balance and calm.</p>
-      </section>
+        <h1 class="card__title">Equilibrium #3429</h1>
+        <p class="card__description">Our Equilibrium collection promotes balance and calm.</p>
 
-      <section class="value">
-        <img class="icon" src="./images/icon-ethereum.svg" alt="ethereum icon" />
-        <h2 class="price text">0.041 ETH</h2>
-      </section>
+        <div class="card__value flex">
+          <div class="flex align-center">
+            <img class="icon" src="./images/icon-ethereum.svg" alt="" />
+            <span>0.041 ETH</span>
+          </div>
 
-      <section class="time">
-        <img class="icon" src="./images/icon-clock.svg" alt="clock icon" />
-        <h2 class="days text">3 days left</h2>
-      </section>
+          <div class="flex align-center">
+            <img class="icon" src="./images/icon-clock.svg" alt="" />
+            <span>3 days left</span>
+          </div>
+        </div>
 
-      <section class="author">
-        <img class="profilepic" src="./images/image-avatar.png" alt="profile pic" />
-        <h3 class="name">Creation of <span>Jules Wyvern</span></h3>
-      </section>
+        <div class="card__author flex align-center">
+          <img class="profilepic" src="./images/image-avatar.png" alt="profile pic" />
+          <p class="name">Creation of <span>Jules Wyvern</span></p>
+        </div>
+      </div>
     </main>
 
     <footer class="attribution">
