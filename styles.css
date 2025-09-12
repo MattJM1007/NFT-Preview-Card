@@ -74,7 +74,11 @@ body {
   background-color: var(--clr-neutral-800);
   padding: 1.5rem;
   min-height: 100vh;
+
+  display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /* typography */
@@ -91,7 +95,8 @@ body {
   font-size: var(--fs-300);
 }
 
-.text-active:hover {
+.text-active:hover,
+.text-active:focus-visible {
   color: var(--clr-primary-cyan);
   cursor: pointer;
 }
@@ -147,10 +152,17 @@ body {
   place-content: center;
   cursor: pointer;
   opacity: 0;
-  transition: all 0.2s ease-in;
+  transition: all 0.3s ease-in;
 }
 
-.card__img:hover::after {
+@media (prefers-reduced-motion: reduce) {
+  .card__img::after {
+    transition: none;
+  }
+}
+
+.card__img:hover::after,
+.card__img:focus-visible::after {
   opacity: 1;
 }
 
@@ -179,8 +191,9 @@ body {
   padding-block-start: 1rem;
 }
 
-.card__author span {
+.card__author a {
   color: var(--clr-neutral-100);
+  text-decoration: none;
 }
 
 .card__author img {
