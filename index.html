@@ -15,29 +15,31 @@
 
     <title>Frontend Mentor | NFT preview card component</title>
   </head>
-  <body>
+  <body class="flex align-center justify-center">
     <main>
-      <div class="card">
-        <img class="card__img" src="./images/image-equilibrium.jpg" alt="clear, redish cube sitting on one corner against a dark blue background" />
+      <div class="card flow-content">
+        <div class="card__img">
+          <img src="./images/image-equilibrium.jpg" alt="clear, redish cube sitting on one corner against a dark blue background" />
+        </div>
 
-        <h1 class="card__title">Equilibrium #3429</h1>
-        <p class="card__description">Our Equilibrium collection promotes balance and calm.</p>
+        <h1 class="card__title text-active">Equilibrium #3429</h1>
+        <p class="card__description text-light">Our Equilibrium collection promotes balance and calm.</p>
 
         <div class="card__value flex">
           <div class="flex align-center">
             <img class="icon" src="./images/icon-ethereum.svg" alt="" />
-            <span>0.041 ETH</span>
+            <span class="text-accent text-sm">0.041 ETH</span>
           </div>
 
           <div class="flex align-center">
             <img class="icon" src="./images/icon-clock.svg" alt="" />
-            <span>3 days left</span>
+            <span class="text-light text-sm">3 days left</span>
           </div>
         </div>
 
         <div class="card__author flex align-center">
-          <img class="profilepic" src="./images/image-avatar.png" alt="profile pic" />
-          <p class="name">Creation of <span>Jules Wyvern</span></p>
+          <img src="./images/image-avatar.png" alt="profile pic" />
+          <p class="name text-light text-sm">Creation of <span class="text-active">Jules Wyvern</span></p>
         </div>
       </div>
     </main>

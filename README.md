@@ -43,43 +43,7 @@ Users should be able to:
 
 ### What I learned
 
-Learned more about to overlay an images on hover.
-
-```html
-<section class="mainimg">
-  <img class="productimg" src="./images/image-equilibrium.jpg" alt="equilibrium cube" />
-  <section class="overlay">
-    <img class="viewicon" src="./images/icon-view.svg" alt="view overlay icon" />
-  </section>
-</section>
-```
-
-```css
-.overlay {
-  position: absolute;
-  left: 42%;
-  right: 50%;
-  top: 19.5%;
-  bottom: 40%;
-  width: 17rem;
-  height: 17rem;
-  border-radius: 0.4rem;
-  background-color: rgb(0, 255, 247, 50%);
-  opacity: 0;
-}
-
-.viewicon {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.overlay:hover {
-  cursor: pointer;
-  opacity: 1;
-}
-```
+Refactored the html to have a component structure and redid css to follow more BEM style naming and generally more organized and design system oriented. Also added transition for a smooth hover effect.
 
 ### Continued development
 
